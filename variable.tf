@@ -16,4 +16,8 @@ variable "location" {
 variable "prefix" {
   description = "A prefix used for all resources in this example"
   default     = "terraform-garage"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5e11c3ec37f2851814c9104d1cea90e353578a2e

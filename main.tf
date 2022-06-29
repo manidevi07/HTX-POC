@@ -102,10 +102,17 @@ provider "helm" {
 }
 
 resource "helm_release" "nginx_ingress" {
+<<<<<<< HEAD
   name = "nginx-ingress-controller"
   namespace = "default"
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "nginx-ingress-controller"
+=======
+  name = "nodeappchart"
+  namespace = "default"
+  repository = "https://manidevi07.github.io/helm-charts/nodeChart"
+  chart      = "nodeappchart"
+>>>>>>> 5e11c3ec37f2851814c9104d1cea90e353578a2e
 
   set {
     name  = "service.type"
@@ -113,11 +120,18 @@ resource "helm_release" "nginx_ingress" {
   }
   
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e11c3ec37f2851814c9104d1cea90e353578a2e
 /*
  data "kubernetes_service" "chartloadbalancer" {
    metadata {
      name = helm_release.nginx_ingress.name
      namespace = helm_release.nginx_ingress.namespace
    }
+<<<<<<< HEAD
  }*/
+=======
+ }*/
+>>>>>>> 5e11c3ec37f2851814c9104d1cea90e353578a2e
